@@ -1,0 +1,145 @@
+<app-nav *ngIf="user"></app-nav>
+
+<div  *ngIf="user">Bienvennue {{user.name}} </div>
+
+
+<div class="page">
+ 
+  
+  <div id="gauche">
+        
+    <div id="input">
+        <label class="label">Nom </label><input type="text" [(ngModel)]="card.lastname" (ngModelChange)="lastname() " #inputLastname><br>
+        <label  class="label">Prénom </label><input type="text" [(ngModel)]="card.firstname"(ngModelChange)="firstname()"  #inputFirstname><br>
+        <label  class="label">Fonction </label><input type="text" [(ngModel)]="card.function" (ngModelChange)="fonction()" #inputFonction><br>
+        <label  class="label">Adresse </label><input type="text" [(ngModel)]="card.adress" (ngModelChange)="adress()" #inputAdress><br>
+    </div>  
+    <br>
+
+    <div class="font" *ngIf="authorisationLastname " >
+        <h1>Nom</h1>
+        <label class="labelfont" >Taille de la police </label> 
+        <input type="number" min="0" max="100"  [(ngModel)]="fontsize.size" (ngModelChange)="setFontSizeParent()">
+       
+        <br> 
+
+        <label class="labelfont">Famille de la police </label> 
+        <select  [(ngModel)]="fontfamily.family" (ngModelChange)="setFontFamilyParent()">
+          <option value="Times New Roman"  >Times New Roman</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Arial">Arial</option>
+        </select> 
+        <br>
+        <br>
+
+        <label class="label">R </label><input type="range" min="0" max="255"  [(ngModel)]="fontcolor.red"  (ngModelChange)="setColorParent()"><br>
+        <label class="label">G </label><input type="range" min="0" max="255" [(ngModel)]="fontcolor.green" (ngModelChange)="setColorParent()"><br>
+        <label class="label">B </label><input type="range" min="0" max="255" [(ngModel)]="fontcolor.blue" (ngModelChange)="setColorParent()"><br>
+        <label class="label">A </label><input type="range" min="0" max="1" step="0.1" [(ngModel)]="fontcolor.alpha" (ngModelChange)="setColorParent()">
+
+    </div> 
+   
+    <div class="font" *ngIf="authorisationFirstname " >
+        <h1>Prénom</h1>
+        <label class="labelfont" >Taille de la police </label> 
+        
+        <input type="number" min="0" max="100"  [(ngModel)]="fontsizefirstname.size" (ngModelChange)="setFontSizeParentfirstname()">
+        <br> 
+
+        <label class="labelfont">Famille de la police </label> 
+        <select  [(ngModel)]="fontfamilyfirstname.family" (ngModelChange)="setFontFamilyParentfirstname()">
+          <option value="Times New Roman"  >Times New Roman</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Arial">Arial</option>
+        </select> 
+        <br>
+        <br>
+
+        <label class="label">R </label><input type="range" min="0" max="255"  [(ngModel)]="fontcolorfirstname.red"  (ngModelChange)="setFontColorParentfirstname()"><br>
+        <label class="label">G </label><input type="range" min="0" max="255" [(ngModel)]="fontcolorfirstname.green" (ngModelChange)="setFontColorParentfirstname()"><br>
+        <label class="label">B </label><input type="range" min="0" max="255" [(ngModel)]="fontcolorfirstname.blue" (ngModelChange)="setFontColorParentfirstname()"><br>
+        <label class="label">A </label><input type="range" min="0" max="1" step="0.1" [(ngModel)]="fontcolorfirstname.alpha" (ngModelChange)="setFontColorParentfirstname()">
+
+    </div> 
+    
+
+    <div class="font" *ngIf="authorisationFonction " >
+        <h1>Fonction</h1>
+        <label class="labelfont" >Taille de la police </label> 
+        
+        <input type="number" min="0" max="100"  [(ngModel)]="fontsizefonction.size" (ngModelChange)="setFontSizeParentfonction()">
+        <br> 
+
+        <label class="labelfont">Famille de la police </label> 
+        <select  [(ngModel)]="fontfamilyfonction.family" (ngModelChange)="setFontFamilyParentfonction()">
+          <option value="Times New Roman"  >Times New Roman</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Arial">Arial</option>
+        </select> 
+        <br>
+        <br>
+
+        <label class="label">R </label><input type="range" min="0" max="255"  [(ngModel)]="fontcolorfonction.red"  (ngModelChange)="setFontColorParentfonction()"><br>
+        <label class="label">G </label><input type="range" min="0" max="255" [(ngModel)]="fontcolorfonction.green" (ngModelChange)="setFontColorParentfonction()"><br>
+        <label class="label">B </label><input type="range" min="0" max="255" [(ngModel)]="fontcolorfonction.blue" (ngModelChange)="setFontColorParentfonction()"><br>
+        <label class="label">A </label><input type="range" min="0" max="1" step="0.1" [(ngModel)]="fontcolorfonction.alpha" (ngModelChange)="setFontColorParentfonction()">
+
+    </div> 
+
+    <div class="font" *ngIf="authorisationAdress " >
+        <h1>Adresse</h1>
+        <label class="labelfont" >Taille de la police </label> 
+        
+        <input type="number" min="0" max="100"  [(ngModel)]="fontsizeadress.size" (ngModelChange)="setFontSizeParentadress()">
+        <br> 
+
+        <label class="labelfont">Famille de la police </label> 
+        <select  [(ngModel)]="fontfamilyadress.family" (ngModelChange)="setFontFamilyParentadress()">
+          <option value="Times New Roman"  >Times New Roman</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Arial">Arial</option>
+        </select> 
+        <br>
+        <br>
+
+        <label class="label">R </label><input type="range" min="0" max="255"  [(ngModel)]="fontcoloradress.red"  (ngModelChange)="setFontColorParentadress()"><br>
+        <label class="label">G </label><input type="range" min="0" max="255" [(ngModel)]="fontcoloradress.green" (ngModelChange)="setFontColorParentadress()"><br>
+        <label class="label">B </label><input type="range" min="0" max="255" [(ngModel)]="fontcoloradress.blue" (ngModelChange)="setFontColorParentadress()"><br>
+        <label class="label">A </label><input type="range" min="0" max="1" step="0.1" [(ngModel)]="fontcoloradress.alpha" (ngModelChange)="setFontColorParentadress()">
+
+    </div> 
+    <button class="button" (click)="validateCard() ">Valider</button>
+  </div>
+
+      <div id="droite" (event)="color=$event" (eventfontsize)="fontsize=$event" (eventfontcolor)="fontcolor=$event"   (eventfontfamily)="fontfamily=$event">
+        
+          <div id="card" [appBackground]="color.toString()" >
+          
+            <div id="names">
+                <div id="firstname"class="name" appfont [Fontsize]="fontsizefirstname.toString()" appfont [Fontcolor]="fontcolorfirstname.toString()" appfont [Fontfamily]="fontfamilyfirstname.toString()"
+                >{{card.firstname}}  </div>
+              
+                <div class="name" appfont [Fontsize]="fontsize.toString()" appfont [Fontcolor]="fontcolor.toString()" appfont [Fontfamily]="fontfamily.toString()"
+                > {{card.lastname}}</div>
+            </div>
+            
+            <div id="fonction" appfont [Fontsize]="fontsizefonction.toString()" appfont [Fontcolor]="fontcolorfonction.toString()" appfont [Fontfamily]="fontfamilyfonction.toString()"
+            > {{card.function}}</div>
+            <div id="adress" appfont [Fontsize]="fontsizeadress.toString()" appfont [Fontcolor]="fontcoloradress.toString()" appfont [Fontfamily]="fontfamilyadress.toString()"
+            > {{card.adress}}</div>
+         </div>
+          
+          
+
+       
+
+        <app-color (event)="color=$event"></app-color>
+       
+      </div>
+
+</div>
+

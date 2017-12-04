@@ -1,0 +1,24 @@
+<app-nav *ngIf="user"></app-nav>
+<app-nav2 *ngIf="!user"></app-nav2>
+<div class="home" >
+               
+        <div class="containerCenter">
+                <div class ="form">
+                <div class="containerinput">
+                    <label for="name" class="labelform">Nom </label>
+                    <input id="name" name="name"  class="inputtext" #inputName>
+                    <div class="error"> {{errorName}}</div>
+                       <br>
+                    <label for="password" class="labelform">Mot de passe  </label>
+                    <input id="password" name="password" class="inputtext" #inputPassword>
+                    <div class="error"> {{errorPassword}}</div>
+                        <br>
+                    <div class="error"> {{errorUser}}</div>
+                      
+                        <button class="button" (click)="valideUser(inputName.value,inputPassword.value)" >Connexion</button>
+                    
+                </div>
+                </div>
+        </div>
+
+</div>

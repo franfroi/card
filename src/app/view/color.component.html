@@ -1,0 +1,14 @@
+
+ <div id="inputRange"[appBackground]="color.toString()">
+<span >Modifier couleur fond carte </span> <br><br> 
+        R : {{color.red}} G :{{color.green}} B: {{color.blue}} alpha: {{color.alpha}}<br>
+        <label class="label">R </label><input type="range" min="0" max="255"  [(ngModel)]="color.red"  (ngModelChange)="setColorParent()"><br>
+        <label class="label">G </label><input type="range" min="0" max="255" [(ngModel)]="color.green" (ngModelChange)="setColorParent()"><br>
+        <label class="label">B </label><input type="range" min="0" max="255" [(ngModel)]="color.blue" (ngModelChange)="setColorParent()"><br>
+        <label class="label">A </label><input type="range" min="0" max="1" step="0.1" [(ngModel)]="color.alpha" (ngModelChange)="setColorParent()">
+       
+   
+          
+           
+
+</div> 

@@ -1,0 +1,24 @@
+<app-nav *ngIf="user"></app-nav>
+
+<div  *ngIf="user">Bienvennue {{user.name}} </div>
+<div id="card" *ngFor="let card of Cards;" [appBackground]="card.cardcolor">
+      
+     
+                
+                   <div id="names">
+                      <div id="firstname"class="name" appfont [Fontsize]="card.fontsizefirstname" appfont [Fontcolor]="card.fontcolorfirstname" appfont [Fontfamily]="card.fontfamilyfirstname"
+                      >{{card.firstname}}  </div>
+                    
+                      <div class="name" appfont [Fontsize]="card.fontsizelastname" appfont [Fontcolor]="card.fontcolorlastname" appfont [Fontfamily]="card.fontfamilylastname"
+                      > {{card.lastname}}</div>
+                  </div>
+                  
+                  <div id="fonction" appfont [Fontsize]="card.fontsizefonction" appfont [Fontcolor]="card.fontcolorfonction" appfont [Fontfamily]="card.fontfamilyfonction"
+                  > {{card.function}}</div>
+                  <div id="adress2" appfont [Fontsize]="card.fontsizeadress" appfont [Fontcolor]="card.fontcoloradress" appfont [Fontfamily]="card.fontfamilyadress"
+                  > {{card.adress}}</div>
+   
+  
+    
+   </div>
+   <br>  <br>  <br>  <br>  <br>

@@ -1,0 +1,262 @@
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#gauche{
+    width: 40%;
+    height: 100%;
+   
+}
+#droite{
+    width: 60%;
+    height: 100%;
+   
+}
+
+#input{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 370px;
+}
+
+
+.label{
+    
+        color: #B4886B;
+        font-weight: bold;
+        display: block;
+        width: 100px;
+        float: left;
+       
+}
+.labelfont{
+    
+        color: #B4886B;
+        font-weight: bold;
+        display: block;
+        width: 180px;
+        float: left;
+       
+}
+
+#inputRange{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 60%;
+}
+.font{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#card{
+    width: 60%;
+    height: 55%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+#names{
+    width: 80%;
+    margin:0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+   
+   
+   
+
+
+.name{
+   margin-left: 5px;
+   text-align: center;
+}
+
+#fonction{
+    width: 80%;
+    text-align: center;
+    margin: 10% auto;
+}
+
+#adress{
+    width: 80%;
+    text-align: center;
+    margin: 20% auto;
+}
+#adress2{
+    width: 80%;
+    text-align: center;
+    margin: 10% auto;
+}
+
+
+.home{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(26, 24, 24, 0.493);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  
+}
+.containerCenter{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  
+    
+
+}
+
+nav{
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.267);
+   display:flex;
+    
+}
+
+#title{
+    text-decoration-line: none;
+    width:30%;
+    line-height: 100px;
+    text-align: center;
+    font-size:50px;
+    color: rgb(73, 206, 117);
+
+}
+#title:hover{
+  
+   
+    font-size:55px;
+   
+
+}
+#menu{
+    width: 70%;
+    display:flex;
+    justify-content: flex-end; 
+}
+.nav{
+    
+    text-decoration-line: none;
+    color: white;
+    width: 150px;
+    line-height: 100px;
+    text-align: center;
+    
+   
+}
+
+.nav:hover{
+    color: rgb(73, 206, 117);
+}
+
+.verte{
+    color: rgb(73, 206, 117);
+}
+
+
+.welcome{
+    position: relative;
+    top:60px;
+    width: 100%;
+    text-align: center;
+}
+
+.link{
+    text-decoration-line: none;
+    color: wheat;
+}
+.link:hover{
+    color: rgb(73, 206, 117);
+}
+
+#foto{
+ 
+ margin-top:50px;
+ margin-left: 150px;
+}
+
+.form{
+    position: relative;
+    width: 450px;
+    height: 200px;
+    top:60px;
+   border: 1px solid white;
+   border-radius: 8px;
+    margin: 0 auto;
+    
+    
+   
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(69, 129, 121);
+    border: 1px solid rgb(129, 69, 69);
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 150px;
+    cursor: pointer;
+    
+}
+.button:hover{
+    font-size: 15px;
+    
+}
+
+
+
+.labelform{
+   
+        color: #B4886B;
+        font-weight: bold;
+        display: block;
+        width: 150px;
+        float: left;
+        
+       
+}
+
+.containerinput{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 25px;
+
+}
+
+.error{
+    font-size: 10px;
+    color: red;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+#cards{
+    width: 400px;
+    height: 200px;
+
+}
+
+#construct{
+   
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+

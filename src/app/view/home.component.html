@@ -1,0 +1,15 @@
+<app-nav *ngIf="user"></app-nav>
+<app-nav2 *ngIf="!user"></app-nav2>
+<div class="home" >
+        <div class="containerCenter">
+                 <h1 class="welcome"> Bienvennue sur <span class="verte">Visit Card</span></h1><br><br>
+                <h2 class="welcome">Vous pouvez créer des cartes de visites .</h2>
+                <h3 class="welcome"> <a routerLink="/signIn"  title="Sign In" class="link">Loguer vous</a> ou
+                    <a routerLink="/signUp"  title="Sign Up" class="link">créer un compte</a></h3>
+
+                
+                 <img id="foto" srcset="assets/visite_img1.png">
+              
+        </div>
+
+</div>
